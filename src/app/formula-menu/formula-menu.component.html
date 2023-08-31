@@ -1,13 +1,45 @@
 <div class="container-fluid">
-    MOTOR
+    <img class="logoPagina" src="../../assets/logoPagina.png">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" routerLink="/formula-menu">Motor</a>
+                </li>
+              </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" routerLink="/">Home</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" routerLink="/futbol-menu">Fútbol</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" routerLink="/nba-menu">Nba</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <span class="textHeader"> MOTOR </span>
 </div>
 <div id="menu" class="container-fluid">
-    <div class="container">
-        <span class="text"> FORMULA 1 </span>
+    <div class="container" (click)="navigateToEscuderias()">
+        <img id="f1" class="logo" src="../../assets/formula-1-logo-0.png">
+        <span> FORMULA 1 </span>
         <img class="img" src="../../assets/angulo-de-la-flecha-apuntando-hacia-la-derecha.png">
     </div>
-    <div class="container">
-        <span class="text"> MOTO GP </span>
+    <div class="container" (click)="navigateToEscuderiasMoto()">
+        <img id="gp" class="logo" src="../../assets/Moto_Gp_logo.svg.png">
+        <span> MOTO GP </span>
         <img class="img" src="../../assets/angulo-de-la-flecha-apuntando-hacia-la-derecha.png">
     </div>
 </div>

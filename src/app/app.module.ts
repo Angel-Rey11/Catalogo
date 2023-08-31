@@ -10,6 +10,8 @@ import { NbaMenuComponent } from './nba-menu/nba-menu.component';
 import { MenuLigasComponent } from './menu-ligas/menu-ligas.component';
 import { MenuSeleccionesComponent } from './menu-selecciones/menu-selecciones.component';
 import { MenuFutbolRetroComponent } from './menu-futbol-retro/menu-futbol-retro.component';
+import { EscuderiasMenuComponent } from './escuderias-menu/escuderias-menu.component';
+import { EscuderiasmotoMenuComponent } from './escuderiasmoto-menu/escuderiasmoto-menu.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { MenuFutbolRetroComponent } from './menu-futbol-retro/menu-futbol-retro.
     NbaMenuComponent,
     MenuLigasComponent,
     MenuSeleccionesComponent,
-    MenuFutbolRetroComponent
+    MenuFutbolRetroComponent,
+    EscuderiasMenuComponent,
+    EscuderiasmotoMenuComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { EscuderiasMenuComponent } from './escuderias-menu/escuderias-menu.component';
+import { EscuderiasmotoMenuComponent } from './escuderiasmoto-menu/escuderiasmoto-menu.component';
 import { FormulaMenuComponent } from './formula-menu/formula-menu.component';
 import { FutbolMenuComponent } from './futbol-menu/futbol-menu.component';
 import { MenuFutbolRetroComponent } from './menu-futbol-retro/menu-futbol-retro.component';
@@ -16,6 +18,8 @@ const routes: Routes = [
   {path:'menu-ligas', component:MenuLigasComponent},
   {path:'menu-selecciones', component:MenuSeleccionesComponent},
   {path:'menu-futbol-retro', component:MenuFutbolRetroComponent},
+  {path:'escuderias-menu', component:EscuderiasMenuComponent},
+  {path:'escuderiasmoto-menu', component:EscuderiasmotoMenuComponent},
   {
     path: '',
     redirectTo: '/menu-principal',

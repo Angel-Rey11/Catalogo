@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-formula-menu',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormulaMenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
+  }
+
+  navigateToEscuderias() {
+    this.router.navigate(['/escuderias-menu']);
+  }
+
+  navigateToEscuderiasMoto() {
+    this.router.navigate(['/escuderiasmoto-menu']);
   }
 
 }
