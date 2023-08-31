@@ -1,0 +1,46 @@
+.container-fluid {
+    background-color: #040D12;
+    height: 70px;
+    font-family: 'Fuente';
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 20px;
+    color: white;
+}
+
+#menu {
+    margin-top: 8%;
+    height: 80vh;
+    flex-direction: column;
+    gap: 10%;
+    justify-content: flex-start;
+    background-color: transparent;
+}
+
+.container {
+    background-color: #5C8374;
+    border-radius: 50px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#info {
+    background-color: #183D3D;
+}
+
+.img {
+    width: 40px;
+    margin-left: auto;
+}
+
+.text {
+    flex: 1;
+    text-align: center;
+}

@@ -1,0 +1,6 @@
+$font-path: './assets/akony.ttf';
+
+@font-face {
+    font-family: 'Fuente';
+    src: url('#{$font-path}') format('truetype');
+}
