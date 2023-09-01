@@ -1,0 +1,150 @@
+.container-fluid {
+    background-color: #040D12;
+    height: 70px;
+    font-family: 'Fuente';
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 20px;
+    color: white;
+}
+
+.navbar-nav {
+    margin-left: 2%;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 14px;
+}
+
+.nav-link.active {
+    color: #5C8374;
+    font-size: 14px;
+    border-bottom: 1px solid white;
+}
+
+.nav-link {
+    color: white;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid #5C8374;
+    color: #5C8374;
+}
+
+.navbar-toggler {
+    background-color: #5C8374;
+}
+
+.logoPagina {
+    width: 60px;
+}
+
+.navbar-collapse {
+    background-color: black;
+    z-index: 9999;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 1px solid #5C8374;
+    color: #5C8374;
+}
+
+#grid {
+    font-family: 'Cami';
+}
+
+#liga {
+    background-color: #93B1A6;
+    width: 100%;
+    height: 80px;
+    border-radius: 50px;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    margin-top: 2%;
+    color: white;
+    font-size: 16px;
+}
+
+.img {
+    width: 100px;
+    margin-left: auto;
+}
+
+.pais {
+    width: 40px;
+    margin-left: auto;
+}
+
+// CAROUSEL ESTILOS
+// -----------------------------------
+
+.w-100 {
+    width: 100%!important;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: #5C8374;
+    border-radius: 50px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #5C8374;
+}
+
+.madrid {
+    background-color: #FEBE10 !important;
+}
+
+.barca {
+    background-color: #A50044 !important;
+    color: #ffed02;
+}
+
+.escudo {
+    width: 40px;
+}
+
+.textoDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+}
+
+// ---------------------------------------
+
+.col {
+    margin-top: 3%;
+}
+
+.logo {
+    width: 40px;
+    margin-right: auto;
+}
+
+.logoPagina {
+    width: 60px;
+}
+
+.text {
+    flex: 1;
+    text-align: center;
+}
+
+.textHeader {
+    flex: 1;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+
+}

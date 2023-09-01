@@ -12,6 +12,7 @@ import { MenuSeleccionesComponent } from './menu-selecciones/menu-selecciones.co
 import { MenuFutbolRetroComponent } from './menu-futbol-retro/menu-futbol-retro.component';
 import { EscuderiasMenuComponent } from './escuderias-menu/escuderias-menu.component';
 import { EscuderiasmotoMenuComponent } from './escuderiasmoto-menu/escuderiasmoto-menu.component';
+import { CamisLigaEspComponent } from './camis-liga-esp/camis-liga-esp.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { EscuderiasmotoMenuComponent } from './escuderiasmoto-menu/escuderiasmot
     MenuSeleccionesComponent,
     MenuFutbolRetroComponent,
     EscuderiasMenuComponent,
-    EscuderiasmotoMenuComponent
+    EscuderiasmotoMenuComponent,
+    CamisLigaEspComponent
   ],
   imports: [
     BrowserModule,

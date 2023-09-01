@@ -4,3 +4,10 @@ $font-path: './assets/akony.ttf';
     font-family: 'Fuente';
     src: url('#{$font-path}') format('truetype');
 }
+
+$font-path2: './assets/MontereyMediumFLF.ttf';
+
+@font-face {
+    font-family: 'Cami';
+    src: url('#{$font-path2}') format('truetype');
+}

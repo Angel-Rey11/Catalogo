@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CamisLigaEspComponent } from './camis-liga-esp/camis-liga-esp.component';
 import { EscuderiasMenuComponent } from './escuderias-menu/escuderias-menu.component';
 import { EscuderiasmotoMenuComponent } from './escuderiasmoto-menu/escuderiasmoto-menu.component';
 import { FormulaMenuComponent } from './formula-menu/formula-menu.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path:'menu-futbol-retro', component:MenuFutbolRetroComponent},
   {path:'escuderias-menu', component:EscuderiasMenuComponent},
   {path:'escuderiasmoto-menu', component:EscuderiasmotoMenuComponent},
+  {path:'camis-liga-esp', component:CamisLigaEspComponent},
   {
     path: '',
     redirectTo: '/menu-principal',
