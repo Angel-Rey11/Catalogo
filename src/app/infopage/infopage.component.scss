@@ -1,0 +1,100 @@
+.container-fluid {
+    background-color: #040D12;
+    height: 70px;
+    font-family: 'Fuente';
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 20px;
+    color: white;
+}
+
+#grid {
+    font-family: 'Info';
+}
+
+.col {
+    margin-top: 3%;
+}
+
+.navbar-nav {
+    margin-left: 2%;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 14px;
+}
+
+.nav-link.active {
+    color: #5C8374;
+    font-size: 14px;
+    border-bottom: 1px solid white;
+}
+
+.nav-link {
+    color: white;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid #5C8374;
+    color: #5C8374;
+}
+
+.navbar-toggler {
+    background-color: #5C8374;
+}
+
+.logoPagina {
+    width: 60px;
+}
+
+.navbar-collapse {
+    background-color: black;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 1px solid #5C8374;
+    color: #5C8374;
+}
+
+.textHeader {
+    flex: 1;
+    text-align: right;
+    font-size: 16px;
+}
+
+.accordion-item {
+    --bs-accordion-border-color: transparent;
+}
+
+.accordion {
+    --bs-accordion-active-bg: none !important;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem transparent;
+}
+
+.accordion-button {
+    color: #5C8374 !important;
+    font-size: 25px !important;
+}
+
+.accordion-body {
+    text-align: center;
+}
+
+.accordion-button:after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%235C8374'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .row-cols-3>* {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}

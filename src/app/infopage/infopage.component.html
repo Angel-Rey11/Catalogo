@@ -8,7 +8,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" routerLink="/formula-menu">Motor</a>
+                  <a class="nav-link active" aria-current="page" routerLink="/infopage">Info</a>
                 </li>
               </ul>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -23,24 +23,38 @@
             </ul>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
+                  <a class="nav-link" aria-current="page" routerLink="/formula-menu">Motor</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
                   <a class="nav-link" aria-current="page" routerLink="/nba-menu">Nba</a>
                 </li>
             </ul>
           </div>
         </div>
       </nav>
-    <span class="textHeader"> MOTOR </span>
+    <span class="textHeader"> INFO </span>
 </div>
-<div id="menu" class="container-fluid">
-    <div class="container" (click)="navigateToEscuderias()">
-        <img id="f1" class="logo" src="./assets/formula-1-logo-0.png">
-        <span class="text"> FORMULA 1 </span>
-        <img class="img" src="./assets/angulo-de-la-flecha-apuntando-hacia-la-derecha.png">
-    </div>
-    <div class="container" (click)="navigateToEscuderiasMoto()">
-        <img id="gp" class="logo" src="./assets/Moto_Gp_logo.svg.png">
-        <span class="text"> MOTO GP </span>
-        <img class="img" src="./assets/angulo-de-la-flecha-apuntando-hacia-la-derecha.png">
-    </div>
-</div>
+<div id="grid" class="container text-center">
+    <div id="cols" class="row row-cols-3">
+      <div class="col">
+        <div class="accordion" id="accordionExample1">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                  TALLAS
+                </button>
+              </h2>
+              <div id="collapseOne1" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample1">
+                <div class="accordion-body">
 
+                </div>
+              </div>
+            </div>
+        </div>
+      <div class="col">
+
+      </div>
+    </div>
+</div>

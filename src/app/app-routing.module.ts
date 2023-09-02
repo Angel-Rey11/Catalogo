@@ -5,6 +5,7 @@ import { EscuderiasMenuComponent } from './escuderias-menu/escuderias-menu.compo
 import { EscuderiasmotoMenuComponent } from './escuderiasmoto-menu/escuderiasmoto-menu.component';
 import { FormulaMenuComponent } from './formula-menu/formula-menu.component';
 import { FutbolMenuComponent } from './futbol-menu/futbol-menu.component';
+import { InfopageComponent } from './infopage/infopage.component';
 import { MenuFutbolRetroComponent } from './menu-futbol-retro/menu-futbol-retro.component';
 import { MenuLigasComponent } from './menu-ligas/menu-ligas.component';
 import { MenuPrincipalComponent } from './menu-principal/menu-principal.component';
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path:'escuderias-menu', component:EscuderiasMenuComponent},
   {path:'escuderiasmoto-menu', component:EscuderiasmotoMenuComponent},
   {path:'camis-liga-esp', component:CamisLigaEspComponent},
+  {path:'infopage', component:InfopageComponent},
   {
     path: '',
     redirectTo: '/menu-principal',

@@ -25,4 +25,8 @@ export class MenuPrincipalComponent implements OnInit {
     this.router.navigate(['/nba-menu']);
   }
 
+  navigateToInfo() {
+    this.router.navigate(['/infopage']);
+  }
+
 }

@@ -11,3 +11,10 @@ $font-path2: './assets/MontereyMediumFLF.ttf';
     font-family: 'Cami';
     src: url('#{$font-path2}') format('truetype');
 }
+
+$font-path3: './assets/CaviarDreams.ttf';
+
+@font-face {
+    font-family: 'Info';
+    src: url('#{$font-path3}') format('truetype');
+}

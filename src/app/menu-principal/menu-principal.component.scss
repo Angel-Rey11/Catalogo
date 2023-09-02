@@ -41,20 +41,30 @@
 }
 
 .img {
+    width: 20px;
+    margin-left: auto;
+}
+
+.info {
     width: 40px;
     margin-left: auto;
 }
 
 .logo {
-    width: 40px;
+    width: 30px;
     margin-right: auto;
 }
 
 .text {
     flex: 1;
     text-align: center;
+    font-size: 14px;
 }
 
 .logoPagina {
     width: 60px;
+}
+
+.title {
+    font-size: 16px;
 }
