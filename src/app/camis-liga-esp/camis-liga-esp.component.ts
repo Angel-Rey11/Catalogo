@@ -23,12 +23,10 @@ export class CamisLigaEspComponent implements OnInit {
 
     listAll(imagesRef)
     .then(async response => {
-      console.log(response);
 
       for(let item of response.items) {
         const url = await getDownloadURL(item);
         this.images.push(url);
-        console.log(this.images);
       }
     })
     .catch(error => console.log(error));

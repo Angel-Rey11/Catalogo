@@ -98,6 +98,8 @@
     background-color: #5C8374;
 }
 
+// EQUIPOS COLORES
+
 .madrid {
     background-color: #FEBE10 !important;
 }
@@ -107,9 +109,41 @@
     color: #ffed02;
 }
 
+.sevilla {
+    background-color: #F43333 !important;
+    color: white;
+}
+
+.atletico {
+    background-color: #272E61 !important;
+    color: white;
+}
+
+.osasuna {
+    background-color: #0A346F !important;
+    color: white;
+}
+
+.cadiz {
+    background-color: #fde607 !important;
+    color: black;
+}
+
+.betis {
+    background-color: #0BB363 !important;
+    color: #E7A614;
+}
+
+.girona {
+    background-color: #cd2534 !important;
+    color: white;
+}
+
 .escudo {
     width: 40px;
 }
+
+// ------------------------------------------
 
 .textoDiv {
     display: flex;
