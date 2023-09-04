@@ -1,14 +1,5 @@
 {
-  "targets": {
-    "topclothes-6d4a6": {
-      "hosting": {
-        "CatalogoCamis": [
-          "topclothes-6d4a6"
-        ]
-      }
-    }
-  },
   "projects": {
-    "default": "topclothes-6d4a6"
+    "default": "topclothesdq"
   }
 }

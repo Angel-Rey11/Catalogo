@@ -19,7 +19,7 @@ export class CamisLigaEspComponent implements OnInit {
   }
 
   getImages() {
-    const imagesRef = ref(this.storage, 'camis/ligaEsp');
+    const imagesRef = ref(this.storage, 'camis/ligasEsp');
 
     listAll(imagesRef)
     .then(async response => {
