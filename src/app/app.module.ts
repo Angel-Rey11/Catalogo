@@ -14,6 +14,9 @@ import { EscuderiasMenuComponent } from './escuderias-menu/escuderias-menu.compo
 import { EscuderiasmotoMenuComponent } from './escuderiasmoto-menu/escuderiasmoto-menu.component';
 import { CamisLigaEspComponent } from './camis-liga-esp/camis-liga-esp.component';
 import { InfopageComponent } from './infopage/infopage.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -28,11 +31,13 @@ import { InfopageComponent } from './infopage/infopage.component';
     EscuderiasMenuComponent,
     EscuderiasmotoMenuComponent,
     CamisLigaEspComponent,
-    InfopageComponent
+    InfopageComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   providers: [],
   bootstrap: [AppComponent]
