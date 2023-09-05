@@ -10,6 +10,18 @@
     color: white;
 }
 
+#buttons {
+    background-color: transparent !important;
+    height: 100%;
+    font-family: 'Cami';
+    font-size: 14px !important;
+    display: grid;
+    grid-column: auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
 .container {
     display: grid;
     grid-column: auto;
@@ -82,7 +94,7 @@
     cursor: pointer;
     margin-top: 3%;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .img {
@@ -152,6 +164,16 @@
     color: white;
 }
 
+.athletic {
+    background-color: #EE2523 !important;
+    color: white;
+}
+
+.sociedad {
+    background-color: #0067B1 !important;
+    color: white;
+}
+
 .escudo {
     width: 40px;
 }
@@ -171,6 +193,7 @@
 
 .col {
     margin-top: 3%;
+    height: 100%;
 }
 
 .logo {
@@ -190,4 +213,18 @@
 .textHeader {
     flex: 1;
     text-align: right;
+}
+
+.modal-header {
+    border-bottom: 0px;
+    background-color: #5C8374;
+    height: 60px;
+    .title {
+        font-family: 'cami';
+        font-size: 16px;
+        color: white;
+    }
+    .logoPagina {
+        width: 60px;
+    }
 }
