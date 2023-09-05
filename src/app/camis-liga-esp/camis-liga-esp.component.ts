@@ -15,21 +15,25 @@ export class CamisLigaEspComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getImages();
+
   }
 
-  getImages() {
-    const imagesRef = ref(this.storage, 'camis/ligasEsp');
+  getImages(url:string) {
+    const imagesRef = ref(this.storage, 'camis/ligasEsp/' + url);
 
     listAll(imagesRef)
     .then(async response => {
-
+      this.images = [];
       for(let item of response.items) {
         const url = await getDownloadURL(item);
         this.images.push(url);
       }
     })
     .catch(error => console.log(error));
+  }
+
+  openmodal(url:string) {
+    this.getImages(url);
   }
 
 }

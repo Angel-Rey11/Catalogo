@@ -10,6 +10,19 @@
     color: white;
 }
 
+.container {
+    display: grid;
+    grid-column: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 5%;
+    border-radius: 50px;
+}
+
 .navbar-nav {
     margin-left: 2%;
 }
@@ -67,7 +80,7 @@
     text-align: center;
     display: flex;
     cursor: pointer;
-    margin-top: 2%;
+    margin-top: 3%;
     color: white;
     font-size: 16px;
 }
