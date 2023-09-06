@@ -79,19 +79,16 @@
 }
 
 #divBody {
-    transition: background-color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     justify-content: flex-start !important;
     flex-direction: column !important;
 }
 
 #motor {
-    transition: background-color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     justify-content: flex-start !important;
     flex-direction: column !important;
 }
 
 #nba {
-    transition: background-color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     justify-content: flex-start !important;
     flex-direction: column !important;
 }
@@ -105,7 +102,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bolder;
 }
 
@@ -114,7 +111,7 @@
     margin-top: 1%;
     width: 100%;
     height: auto;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .imagen {
@@ -147,21 +144,6 @@
     font-size: 18px;
 }
 
-#divBody:hover {
-    transform: scale(1.05);
-    background-color: #183D3D;
-}
-
-#motor:hover {
-    transform: scale(1.05);
-    background-color: #183D3D;
-}
-
-#nba:hover {
-    transform: scale(1.05);
-    background-color: #183D3D;
-}
-
 .img-fluid {
     width: 60px;
 }
@@ -174,6 +156,36 @@ html, body {
 .bg-body-tertiary {
     --bs-bg-opacity: 1;
     background-color: transparent !important
+}
+
+@media (min-width: 1200px) {
+
+    #divBody {
+        transition: background-color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+    
+    #motor {
+        transition: background-color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+    
+    #nba {
+        transition: background-color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+
+    #divBody:hover {
+        transform: scale(1.05);
+        background-color: #183D3D;
+    }
+    
+    #motor:hover {
+        transform: scale(1.05);
+        background-color: #183D3D;
+    }
+    
+    #nba:hover {
+        transform: scale(1.05);
+        background-color: #183D3D;
+    }
 }
 
 @media (max-width: 768px) {
@@ -237,5 +249,49 @@ html, body {
 
     .header {
         font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .nombrePag {
+        font-size: 14px;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: 100%;
+        width: 50%;
+        height: 100%;
+        padding-top: 56px;
+        transition: right 0.3s ease;
+        z-index: 999;
+      }
+    
+    .navbar-collapse.show {
+        right: 0;
+    }
+
+    .img-fluid {
+        display: none;
+    }
+
+    .bodyCon {
+        font-size: 16px;
+    }
+
+    .header {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .bodyCon {
+        font-size: 16px;
+    }
+
+    .header {
+        font-size: 18px;
     }
 }
