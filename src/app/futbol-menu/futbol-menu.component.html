@@ -6,6 +6,10 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-lg-none">
+              <img class="logoPagina2" src="./assets/logoPagina.png">
+              <span class="nombrePag"> TOPCLOTHES </span>
+            </div>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" routerLink="/futbol-menu">Fútbol</a>
@@ -32,7 +36,7 @@
     <span class="textHeader"> FÚTBOL </span>
 </div>
 <div id="menu" class="container-fluid">
-    <div class="container" (click)="navigateToLigas()">
+    <!-- <div class="container" (click)="navigateToLigas()">
         <span class="text"> LIGAS </span>
         <img class="img" src="./assets/angulo-de-la-flecha-apuntando-hacia-la-derecha.png">
     </div>
@@ -47,5 +51,44 @@
     <div class="container">
       <span class="text"> TALLAS </span>
       <img class="img" src="./assets/angulo-de-la-flecha-apuntando-hacia-la-derecha.png">
+    </div> -->
+    <div id="primero" class="container"> 
+      <div id="divBody" class="container" (click)="navigateToLigas()"> 
+          <div class="header">
+              <span> LIGAS </span>
+          </div>
+          <div class="bodyCon">
+              <span> ¡Las mejores camisetas de fútbol para verdaderos fanáticos!  <br> Descubre nuestras selecciones de ligas de élite y viste con estilo esta temporada. </span>
+          </div>
+      </div>
+  </div>
+  <div id="segundo" class="container"> 
+      <div id="motor" class="container" (click)="navigateToSelecciones()">
+          <div class="header">
+              <span> SELECCIONES </span>
+          </div>
+          <div class="bodyCon">
+              <span> ¡Descubre nuestra colección de camisetas de selecciones nacionales! </span>
+          </div>
+      </div>
+      <div id="nba" class="container" (click)="navigateToRetro()">
+          <div class="header">
+              <span> RETRO </span>
+          </div>
+          <div class="bodyCon">
+              <span> Revive la nostalgia del fútbol con nuestras camisetas antiguas. </span>
+          </div>
+      </div>
+  </div>
+  <div id="segundo" class="container"> 
+      <div id="divBody" class="container"> 
+          <div class="header">
+              <span> TALLAS </span>
+          </div>
+          <div class="bodyCon">
+              <span> Encuentra la talla perfecta para ti. Consulta nuestra guía de tallas. 
+                Te ofrecemos una variedad de opciones para que encuentres la comodidad que necesitas mientras representas a tu equipo favorito en estilo. </span>
+          </div>
+      </div>
   </div>
 </div>
