@@ -1,75 +1,141 @@
 <div class="container-fluid">
-    <span class="title"> MOTO GP </span>
+  <img class="logoPagina" src="./assets/logoPagina.png">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-lg-none">
+            <img class="logoPagina2" src="./assets/logoPagina.png">
+            <span class="nombrePag"> TOPCLOTHES </span>
+          </div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" routerLink="/escuderiasmoto-menu">Motor</a>
+              </li>
+            </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" routerLink="/">Home</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" routerLink="/futbol-menu">Fútbol</a>
+              </li>
+          </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" routerLink="/nba-menu">Nba</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <span class="textHeader"> MOTOGP </span>
 </div>
-<div id="grid" class="container text-center">
-    <div id="cols" class="row row-cols-3">
-      <div class="col">
-        <div id="liga" class="container" [ngStyle]="{ 'background-color': colorList[0] }">
-            <span class="text"> REPSOL HONDA </span>
-            <img  id="repsol" class="pais" src="./assets/Repsol-Logo.wine.png">
-        </div>
+<div id="menu" class="container-fluid">
+  <div id="segundo" class="container"> 
+      <div id="motor" class="container honda">
+          <div class="header">
+              <span> REPSOL HONDA </span>
+          </div>
+          <div class="bodyCon">
+            <img class="img-fluid coche" src="https://cdn-1.motorsport.com/static/custom/car-thumbs/MOTOGP_2022/Bikes/Honda.png">
+          </div>
       </div>
-      <div class="col">
-        <div id="liga" class="container" [ngStyle]="{ 'background-color': colorList[1] }">
-            <span class="text"> YAMAHA </span>
-            <img id="yamaha" class="pais" src="./assets/dcb49d5b66ab91ad1784e590ea3d154c.png">
-        </div>
+      <div id="nba" class="container yamaha">
+          <div class="header">
+              <span> YAMAHA </span>
+          </div>
+          <div class="bodyCon">
+            <img class="img-fluid coche" src="https://cdn-6.motorsport.com/images/vcl/VY9Z7X6b/s3/img698974995-4-4.png">
+          </div>
       </div>
-      <div class="col">
-        <div id="liga" class="container" [ngStyle]="{ 'background-color': colorList[2] }">
-            <span class="text"> DUCATI </span>
-            <img class="pais" src="./assets/DucatiLenovo.png">
+  </div>
+  <div id="segundo" class="container"> 
+    <div id="motor" class="container ducati">
+        <div class="header">
+            <span> DUCATI </span>
         </div>
-      </div>
-      <div class="col">
-        <div id="liga" class="container" [ngStyle]="{ 'background-color': colorList[3] }">
-            <span class="text"> RED BULL KTM </span>
-            <img class="pais" src="./assets/MotoGP_Team_RedBullKTMFactoryRacing.png">
+        <div class="bodyCon">
+          <img class="img-fluid coche" src="https://cdn-7.motorsport.com/images/vcl/J0r8QGYn/s3/img2113393013-1.png">
         </div>
-      </div>
-      <div class="col">
-        <div id="liga" class="container" [ngStyle]="{ 'background-color': colorList[4] }">
-            <span class="text"> APRILIA </span>
-            <img class="pais" src="./assets/Aprilia-Logo.png">
-        </div>
-      </div>
-      <div class="col">
-        <div id="liga" class="container" [ngStyle]="{ 'background-color': colorList[5] }">
-            <span class="text"> RNF RACING </span>
-            <img class="pais" src="./assets/CryptoDATA_Aprilia_RNF_MotoGP_Team_logo.png">
-        </div>
-      </div>
-      <div class="col">
-        <div id="liga" class="container" [ngStyle]="{ 'background-color': colorList[6] }">
-            <span class="text"> PRAMAC RACING DUCATI </span>
-            <img class="pais" src="./assets/Pramac_Racing_logo.png">
-        </div>
-      </div>
-      <div class="col">
-        <div id="liga" class="container" [ngStyle]="{ 'background-color': colorList[7] }">
-            <span class="text"> TEAM LCR </span>
-            <img class="pais" src="./assets/Logo-LCR-Honda.png">
-        </div>
-      </div>
-      <div class="col">
-        <div id="liga" class="container" [ngStyle]="{ 'background-color': colorList[8] }">
-            <span class="text"> GASGAS-TECH3 </span>
-            <img class="pais" src="./assets/GasGas_Logo_red-sRGB-RZ-(1).png">
-        </div>
-      </div>
-      <div class="col">
-        <div id="liga" class="container" [ngStyle]="{ 'background-color': colorList[9] }">
-            <span class="text"> MOONEY VR46 </span>
-            <img class="pais" src="./assets/VR46-TEAM.png">
-        </div>
-      </div>
-      <div class="col">
-        <div id="liga" class="container" [ngStyle]="{ 'background-color': colorList[10] }">
-            <span class="text"> GRESINI RACING </span>
-            <img class="pais" src="./assets/motogp-gresini.png">
-        </div>
-      </div>
     </div>
+    <div id="nba" class="container ktm">
+        <div class="header">
+            <span> KTM </span>
+        </div>
+        <div class="bodyCon">
+          <img class="img-fluid coche" src="https://cdn-1.motorsport.com/static/custom/car-thumbs/MOTOGP_2022/Bikes/KTM.png">
+        </div>
+    </div>
+  </div>
+  <div id="segundo" class="container"> 
+    <div id="motor" class="container aprilia">
+        <div class="header">
+            <span> APRILIA </span>
+        </div>
+        <div class="bodyCon">
+          <img class="img-fluid coche" src="http://cdn-1.motorsport.com/static/custom/car-thumbs/MOTOGP_2022/Bikes/Aprilia.png">
+        </div>
+    </div>
+    <div id="nba" class="container rnf">
+        <div class="header">
+            <span> RNF RACING </span>
+        </div>
+        <div class="bodyCon">
+          <img class="img-fluid coche" src="http://cdn-1.motorsport.com/static/custom/car-thumbs/MOTOGP_2022/Bikes/RNF.png">
+        </div>
+    </div>
+  </div>
+  <div id="segundo" class="container"> 
+    <div id="motor" class="container pramac">
+        <div class="header">
+            <span> PRAMAC RACING </span>
+        </div>
+        <div class="bodyCon">
+          <img class="img-fluid coche" src="https://cdn-1.motorsport.com/static/custom/car-thumbs/MOTOGP_2022/Bikes/Prima.png">
+        </div>
+    </div>
+    <div id="nba" class="container lcr">
+        <div class="header">
+            <span> TEAM LCR </span>
+        </div>
+        <div class="bodyCon">
+          <img class="img-fluid coche" src="http://cdn-1.motorsport.com/static/custom/car-thumbs/MOTOGP_2022/Bikes/Marquez.png">
+        </div>
+    </div>
+  </div>
+  <div id="segundo" class="container"> 
+    <div id="motor" class="container gasgas">
+        <div class="header">
+            <span> GASGAS-TECH3 </span>
+        </div>
+        <div class="bodyCon">
+          <img class="img-fluid coche" src="http://cdn-1.motorsport.com/static/custom/car-thumbs/MOTOGP_2022/Bikes/Tech3.png">
+        </div>
+    </div>
+    <div id="nba" class="container vr46">
+        <div class="header">
+            <span> MOONEY VR46 </span>
+        </div>
+        <div class="bodyCon">
+          <img class="img-fluid coche" src="http://cdn-1.motorsport.com/static/custom/car-thumbs/MOTOGP_2022/Bikes/VR46.png">
+        </div>
+    </div>
+  </div>
+  <div id="segundo" class="container"> 
+    <div id="motor" class="container gresini">
+        <div class="header">
+            <span> GRESINI </span>
+        </div>
+        <div class="bodyCon">
+          <img class="img-fluid coche" src="http://cdn-1.motorsport.com/static/custom/car-thumbs/MOTOGP_2022/Bikes/Gresini.png">
+        </div>
+    </div>
+  </div>
 </div>
 
 

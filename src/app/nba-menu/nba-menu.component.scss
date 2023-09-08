@@ -57,7 +57,7 @@
 }
 
 #menu {
-    height: 92vh;
+    height: 93vh;
     flex-direction: column;
     justify-content: flex-start;
     background-color: #93B1A6;
@@ -190,21 +190,6 @@ html, body {
 
 @media (max-width: 768px) {
 
-    #divBody:hover {
-        background-color: transparent;
-        transform: scale(1);
-    }
-
-    #motor:hover {
-        background-color: transparent;
-        transform: scale(1);
-    }
-
-    #nba:hover {
-        background-color: transparent;
-        transform: scale(1);
-    }
-
     .nombrePag {
         font-size: 14px;
     }
@@ -222,21 +207,6 @@ html, body {
     
     .navbar-collapse.show {
         right: 0;
-    }
-
-    #divBody:hover {
-        background-color: transparent;
-        transform: scale(1);
-    }
-
-    #motor:hover {
-        background-color: transparent;
-        transform: scale(1);
-    }
-
-    #nba:hover {
-        background-color: transparent;
-        transform: scale(1);
     }
 
     .img-fluid {

@@ -1,68 +1,141 @@
 <div class="container-fluid">
-   <span class="title">  FORMULA 1 </span>
+  <img class="logoPagina" src="./assets/logoPagina.png">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-lg-none">
+            <img class="logoPagina2" src="./assets/logoPagina.png">
+            <span class="nombrePag"> TOPCLOTHES </span>
+          </div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" routerLink="/escuderias-menu">Motor</a>
+              </li>
+            </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" routerLink="/">Home</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" routerLink="/futbol-menu">Fútbol</a>
+              </li>
+          </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" routerLink="/nba-menu">Nba</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <span class="textHeader"> FORMULA 1 </span>
 </div>
-<div id="grid" class="container text-center">
-    <div id="cols" class="row row-cols-2">
-      <div class="col">
-        <div id="liga" class="container" [ngStyle]="{ 'background-color': colorList[0] }">
-            <span class="text"> RED BULL </span>
-            <img class="pais" src="./assets/redbull.png">
-        </div>
+<div id="menu" class="container-fluid">
+  <div id="segundo" class="container"> 
+      <div id="motor" class="container redbull">
+          <div class="header">
+              <span> RED BULL </span>
+              <img class="img-fluid" src="./assets/redbull.png">
+          </div>
+          <div class="bodyCon">
+            <img class="img-fluid coche" src="https://cdn-1.motorsport.com/static/custom/car-thumbs/F1_2023/CARS/redbull.png">
+          </div>
       </div>
-      <div class="col">
-        <div id="liga" class="container" [ngStyle]="{ 'background-color': colorList[1] }">
-            <span class="text"> MERCEDES </span>
-            <img class="pais" src="./assets/mercedes.png">
-        </div>
+      <div id="nba" class="container mercedes">
+          <div class="header">
+              <span> MERCEDES </span>
+              <img class="img-fluid" src="./assets/mercedes.png">
+          </div>
+          <div class="bodyCon">
+            <img class="img-fluid coche" src="https://cdn-1.motorsport.com/static/custom/car-thumbs/F1_2023/CARS/mercedes.png">
+          </div>
       </div>
-      <div class="col">
-        <div id="liga" class="container" [ngStyle]="{ 'background-color': colorList[2] }">
-            <span class="text"> ASTON MARTIN </span>
-            <img class="pais" src="./assets/aston.png">
+  </div>
+  <div id="segundo" class="container"> 
+    <div id="motor" class="container ferrari">
+        <div class="header">
+            <span> FERRARI </span>
+            <img class="img-fluid" src="./assets/ferrari.png">
         </div>
-      </div>
-      <div class="col">
-        <div id="liga" class="container" [ngStyle]="{ 'background-color': colorList[3] }">
-            <span class="text"> MCLAREN </span>
-            <img class="pais" src="./assets/mclaren.png">
+        <div class="bodyCon">
+          <img class="img-fluid coche" src="https://cdn-1.motorsport.com/static/custom/car-thumbs/F1_2023/CARS/ferrari.png">
         </div>
-      </div>
-      <div class="col">
-        <div id="liga" class="container" [ngStyle]="{ 'background-color': colorList[4] }">
-            <span class="text"> FERRARI </span>
-            <img class="pais" src="./assets/ferrari.png">
-        </div>
-      </div>
-      <div class="col">
-        <div id="liga" class="container" [ngStyle]="{ 'background-color': colorList[5] }">
-            <span class="text"> ALPINE </span>
-            <img class="pais" src="./assets/alpine.png">
-        </div>
-      </div>
-      <div class="col">
-        <div id="liga" class="container" [ngStyle]="{ 'background-color': colorList[6] }">
-            <span class="text"> ALFA ROMEO </span>
-            <img class="pais" src="./assets/alfaromeo.png">
-        </div>
-      </div>
-      <div class="col">
-        <div id="liga" class="container" [ngStyle]="{ 'background-color': colorList[7] }">
-            <span class="text"> ALPHATAURI </span>
-            <img class="pais" src="./assets/alphatauri.png">
-        </div>
-      </div>
-      <div class="col">
-        <div id="liga" class="container" [ngStyle]="{ 'background-color': colorList[8] }">
-            <span class="text"> WILLIAMS </span>
-            <img class="pais" src="./assets/williams.png">
-        </div>
-      </div>
-      <div class="col">
-        <div id="liga" class="container" [ngStyle]="{ 'background-color': colorList[9] }">
-            <span class="text"> HAAS </span>
-            <img class="pais" src="./assets/haas.png">
-        </div>
-      </div>
     </div>
+    <div id="nba" class="container aston">
+        <div class="header">
+            <span> ASTON </span>
+            <img class="img-fluid" src="./assets/aston.png">
+        </div>
+        <div class="bodyCon">
+          <img class="img-fluid coche" src="https://cdn-1.motorsport.com/static/custom/car-thumbs/F1_2023/CARS/astonmartin.png">
+        </div>
+    </div>
+  </div>
+  <div id="segundo" class="container"> 
+    <div id="motor" class="container mclaren">
+        <div class="header">
+            <span> MCLAREN </span>
+            <img class="img-fluid" src="./assets/mclaren.png">
+        </div>
+        <div class="bodyCon">
+          <img class="img-fluid coche" src="https://cdn-1.motorsport.com/static/custom/car-thumbs/F1_2023/CARS/mclaren.png">
+        </div>
+    </div>
+    <div id="nba" class="container alpine">
+        <div class="header">
+            <span> ALPINE </span>
+            <img class="img-fluid" src="./assets/alpine.png">
+        </div>
+        <div class="bodyCon">
+          <img class="img-fluid coche" src="http://cdn-1.motorsport.com/static/custom/car-thumbs/F1_2023/CARS/alpine.png">
+        </div>
+    </div>
+  </div>
+  <div id="segundo" class="container"> 
+    <div id="motor" class="container romeo">
+        <div class="header">
+            <span> ALFA ROMEO </span>
+            <img class="img-fluid" src="./assets/alfaromeo.png">
+        </div>
+        <div class="bodyCon">
+          <img class="img-fluid coche" src="https://cdn-1.motorsport.com/static/custom/car-thumbs/F1_2023/CARS/alfaromo.png">
+        </div>
+    </div>
+    <div id="nba" class="container alphatauri">
+        <div class="header">
+            <span> ALPHATAURI </span>
+            <img class="img-fluid" src="./assets/alphatauri.png">
+        </div>
+        <div class="bodyCon">
+          <img class="img-fluid coche" src="https://cdn-1.motorsport.com/static/custom/car-thumbs/F1_2023/CARS/alphatauri.png">
+        </div>
+    </div>
+  </div>
+  <div id="segundo" class="container"> 
+    <div id="motor" class="container haas">
+        <div class="header">
+            <span> HAAS </span>
+            <img class="img-fluid" src="./assets/haas.png">
+        </div>
+        <div class="bodyCon">
+          <img class="img-fluid coche" src="https://cdn-1.motorsport.com/static/custom/car-thumbs/F1_2023/CARS/haas.png">
+        </div>
+    </div>
+    <div id="nba" class="container williams">
+        <div class="header">
+            <span> WILLIAMS </span>
+            <img class="img-fluid" src="./assets/williams.png">
+        </div>
+        <div class="bodyCon">
+          <img class="img-fluid coche" src="https://cdn-1.motorsport.com/static/custom/car-thumbs/F1_2023/CARS/williams.png">
+        </div>
+    </div>
+  </div>
 </div>
+
 

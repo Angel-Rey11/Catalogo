@@ -1,7 +1,7 @@
 .container-fluid {
     background-color: #040D12;
     height: 70px;
-    font-family: 'Fuente';
+    font-family: 'Info';
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -10,74 +10,304 @@
     color: white;
 }
 
-#grid {
-    margin-top: 5%;
-    font-family: 'Fuente';
+.navbar-nav {
+    margin-left: 2%;
 }
 
-.text {
-    flex: 1;
+.navbar-brand {
+    color: white;
+    font-size: 18px;
+}
+
+.nav-link.active {
+    color: #5C8374;
+    font-size: 18px;
+}
+
+.nav-link {
+    color: white;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid #5C8374;
+    color: #5C8374;
+    border-bottom: 1px solid white;
+}
+
+.navbar-toggler {
+    background-color: #5C8374;
+}
+
+.logoPagina {
+    width: 60px;
+}
+
+.logoPagina2 {
+    width: 40px;
+}
+
+.navbar-collapse {
+    background-color: #040D12;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 1px solid #5C8374;
+    color: #5C8374;
+}
+
+#menu {
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #93B1A6;
+    overflow: hidden !important;
+}
+
+#primero {
+    margin-top: 3% !important;
+    background-color: transparent;
+    border: none;
+}
+
+#segundo {
+    margin-top: 2% !important;
+    flex-direction: row !important;
+    gap: 2%;
+    background-color: transparent;
+    border: none;
+}
+
+#divBody {
+    justify-content: flex-start !important;
+    flex-direction: column !important;
+}
+
+#motor {
+    justify-content: flex-start !important;
+    flex-direction: column !important;
+}
+
+#nba {
+    justify-content: flex-start !important;
+    flex-direction: column !important;
+}
+
+.header {
+    margin-top: 1%;
+    border-bottom: 1px solid white;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 14px;
+    font-size: 25px;
+    font-weight: bolder;
 }
 
-.title {
+.bodyCon {
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    width: 100%;
+    height: 35%;
     font-size: 16px;
 }
 
-#liga {
-    background-color: #93B1A6;
+.container {
+    background-color: #5C8374;
+    height: 25vh;
     width: 100%;
-    height: 80px;
-    border-radius: 50px;
     justify-content: center;
     align-items: center;
     text-align: center;
     display: flex;
+    font-size: 20px;
     cursor: pointer;
+    border: 1px solid black;
+    font-family: 'Info';
 }
 
-.img {
-    width: 100px;
+.textHeader {
+    flex: 1;
+    text-align: right;
+    font-size: 18px;
+}
+
+.img-fluid {
+    width: 30px;
     margin-left: auto;
 }
 
-.pais {
-    width: 50px;
-    margin-left: auto;
+.coche {
+    width: 250px !important;
+    margin-left: 0 !important;
 }
 
-#france {
-    height: 70px;
-    width: 80px;
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
-#resto {
-    width: 80px;
-    height: 70px;
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: transparent !important
 }
 
-#yamaha {
-    width: 40px;
-    height: 30px;
+// COLORES EQUIPOS MOTOGP
+.honda {
+    background-color: rgba(255, 166, 0, 0.822);
 }
 
-#repsol {
-    width: 60px;
+.yamaha {
+    background-color: rgb(34, 171, 235);
 }
 
-.col {
-    margin-top: 3%;
-    color: white;
+.ducati {
+    background-color: rgba(255, 0, 0, 0.774);
+}
+
+.ktm {
+    background-color: rgb(240, 87, 16);
+}
+
+.aprilia {
+    background-color: rgb(204, 42, 13);
+}
+
+.rnf {
+    background-color: gray;
+}
+
+.pramac {
+    background-color: rgb(170, 161, 161);
+}
+
+.lcr {
+    background-color: red;
+}
+
+.gasgas {
+    background-color: crimson;
+}
+
+.vr46 {
+    background-color: rgb(167, 167, 15);
+}
+
+.gresini {
+    background-color: skyblue;
+}
+
+
+
+// ----------------------------------
+
+@media (min-width: 1200px) {
+
+    #divBody {
+        transition: background-color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+    
+    #motor {
+        transition: background-color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+    
+    #nba {
+        transition: background-color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+
+    #divBody:hover {
+        transform: scale(1.05);
+    }
+    
+    #motor:hover {
+        transform: scale(1.05);
+    }
+    
+    #nba:hover {
+        transform: scale(1.05);
+    }
 }
 
 @media (max-width: 768px) {
-    .row {
-        flex-direction: column;
+
+    .nombrePag {
+        font-size: 14px;
     }
 
-    .row-cols-3>* {
-        flex: 0 0 auto;
-        width: 100%;
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: 100%;
+        width: 50%;
+        height: 100%;
+        padding-top: 56px;
+        transition: right 0.3s ease;
+        z-index: 999;
+      }
+    
+    .navbar-collapse.show {
+        right: 0;
+    }
+
+    .bodyCon {
+        font-size: 14px;
+    }
+
+    .header {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .nombrePag {
+        font-size: 14px;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: 100%;
+        width: 50%;
+        height: 100%;
+        padding-top: 56px;
+        transition: right 0.3s ease;
+        z-index: 999;
+      }
+    
+    .navbar-collapse.show {
+        right: 0;
+    }
+
+    .bodyCon {
+        font-size: 16px;
+    }
+
+    .header {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .bodyCon {
+        font-size: 16px;
+    }
+
+    .header {
+        font-size: 18px;
     }
 }

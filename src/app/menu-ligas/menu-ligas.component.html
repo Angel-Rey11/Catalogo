@@ -1,50 +1,91 @@
 <div class="container-fluid">
-    <span class="title"> LIGAS </span>
+  <img class="logoPagina" src="./assets/logoPagina.png">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-lg-none">
+            <img class="logoPagina2" src="./assets/logoPagina.png">
+            <span class="nombrePag"> TOPCLOTHES </span>
+          </div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" routerLink="/menu-ligas">Fútbol</a>
+              </li>
+            </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" routerLink="/">Home</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" routerLink="/formula-menu">Motor</a>
+              </li>
+          </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" routerLink="/nba-menu">Nba</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <span class="textHeader"> LIGAS </span>
 </div>
-<div id="grid" class="container text-center">
-    <div id="cols" class="row row-cols-3">
-      <div class="col">
-        <div id="liga" class="container" (click)="navigateToLigaEsp()">
-            <img class="img" src="./assets/LaLiga_2023_Horizontal_Logo.svg (3).png">
-            <img class="pais" src="./assets/espana.png">
-        </div>
+<div id="menu" class="container-fluid">
+  <div id="segundo" class="container"> 
+      <div id="motor" class="container" (click)="navigateToLigaEsp()">
+          <div class="header">
+              <span> LALIGA </span>
+              <img class="img-fluid" src="./assets/LaLiga_2023_Horizontal_Logo.svg (3).png">
+          </div>
       </div>
-      <div class="col">
-        <div id="liga" class="container">
-            <img class="img" src="./assets/logo-Premier-League.png">
-            <img class="pais" src="./assets/inglaterra.png">
-        </div>
+      <div id="nba" class="container">
+          <div class="header">
+              <span> PREMIER </span>
+              <img class="img-fluid" src="./assets/logo-Premier-League.png">
+          </div>
       </div>
-      <div class="col">
-        <div id="liga" class="container">
-            <img class="img" src="./assets/Italian-Serie-A-Logo-2019.png">
-            <img class="pais" src="./assets/italia.png">
+  </div>
+  <div id="segundo" class="container"> 
+    <div id="motor" class="container">
+        <div class="header">
+            <span> SERIE A </span>
+            <img class="img-fluid" src="./assets/Italian-Serie-A-Logo-2019.png">
         </div>
-      </div>
-      <div class="col">
-        <div id="liga" class="container">
-            <img class="img" src="./assets/logo-German-Bundesliga.png">
-            <img class="pais" src="./assets/alemania.png">
-        </div>
-      </div>
-      <div class="col">
-        <div id="liga" class="container">
-            <img id="france" class="img" src="./assets/Ligue 1 Uber Eats.png">
-            <img class="pais" src="./assets/francia.png">
-        </div>
-      </div>
-      <div class="col">
-        <div id="liga" class="container">
-            <img class="img" src="./assets/Liga Portugal.png">
-            <img class="pais" src="./assets/portugal.png">
-        </div>
-      </div>
-      <div class="col">
-        <div id="liga" class="container">
-            <img id="resto" class="img" src="./assets/1648592690358.png">
-            <img class="pais" src="./assets/en-todo-el-mundo.png">
-        </div>
-      </div>
     </div>
+    <div id="nba" class="container">
+        <div class="header">
+            <span> BUNDESLIGA </span>
+            <img class="img-fluid" src="./assets/logo-German-Bundesliga.png">
+        </div>
+    </div>
+  </div>
+  <div id="segundo" class="container"> 
+    <div id="motor" class="container">
+        <div class="header">
+            <span> LIGUE 1 </span>
+            <img id="france" class="img-fluid" src="./assets/Ligue 1 Uber Eats.png">
+        </div>
+    </div>
+    <div id="nba" class="container">
+        <div class="header">
+            <span> PORTUGAL </span>
+            <img class="img-fluid" src="./assets/Liga Portugal.png">
+        </div>
+    </div>
+  </div>
+  <div id="segundo" class="container"> 
+    <div id="motor" class="container">
+        <div class="header">
+            <span> RESTO </span>
+            <img id="resto" class="img-fluid" src="./assets/1648592690358.png">
+        </div>
+    </div>
+  </div>
 </div>
+
 
