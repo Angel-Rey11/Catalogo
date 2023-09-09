@@ -11,6 +11,7 @@ declare var bootstrap: any;
 export class CamisLigaEspComponent implements OnInit {
 
   images: string[];
+  isLoading: boolean = false;
 
   constructor(private storage: Storage) { 
     this.images = [];
@@ -22,6 +23,7 @@ export class CamisLigaEspComponent implements OnInit {
 
   async getImages(url: string) {
     return new Promise<void>((resolve, reject) => {
+      this.isLoading = true;
       const imagesRef = ref(this.storage, 'camis/ligasEsp/' + url);
   
       listAll(imagesRef)
@@ -48,6 +50,7 @@ export class CamisLigaEspComponent implements OnInit {
   async openmodal(url: string) {
     try {
       await this.getImages(url);
+      this.isLoading = false;
       this.open();
     } catch (error) {
       console.error('Error al descargar las imágenes:', error);
