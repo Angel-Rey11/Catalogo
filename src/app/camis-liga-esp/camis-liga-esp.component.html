@@ -17,7 +17,7 @@
           </div>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" routerLink="/camis-liga-esp">Fútbol</a>
+                <a class="nav-link active" aria-current="page" routerLink="/futbol-menu">Fútbol</a>
               </li>
             </ul>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -40,183 +40,37 @@
     </nav>
     <img class="img" src="./assets/LaLiga_2023_Horizontal_Logo.svg (3).png">
 </div>
-<div id="grid" class="container text-center">
-    <div id="cols" class="row row-cols-2 row-cols-lg-4 justify-content-center">
-      <div class="col">
-        <div id="buttons" class="container-fluid"> 
-          <div class="container">
-            <button type="button" class="btn btn-primary" (click)="openmodal('local/realmadrid')">Local</button>
-            <button type="button" class="btn btn-primary" (click)="openmodal('visitante/realmadrid')">Visitante</button>
-            <button type="button" class="btn btn-primary">Edición Especial</button>
-            <button type="button" class="btn btn-primary">Player Version</button>
+<div id="menu" class="container-fluid">
+  <div id="cols" class="row row-cols-2"> 
+      <div class="col" *ngFor="let acordeon of acordeones; let i = index">
+          <div class="accordion" id="accordionExample" [style.background-color]="acordeon.color">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" [class.collapsed]="i !== acordeonAbiertoIndex" (click)="toggleAcordeon(i)" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  <div class="DivEscudo">
+                    <img class="escudo" [src]="acordeon.img">
+                </div>
+                <div class="textoDiv">
+                    {{acordeon.equipo}}
+                </div>
+                </button>
+              </h2>
+              <div [id]="'collapse' + i" class="accordion-collapse collapse" [class.show]="i === acordeonAbiertoIndex" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <button type="button" class="btn btn-primary" (click)="openmodal(acordeon.srcL)">Local</button>
+                  <button type="button" class="btn btn-primary" (click)="openmodal(acordeon.srcV)">Visitante</button>
+                  <button type="button" class="btn btn-primary">3º Equipación</button>
+                  <button type="button" class="btn btn-primary">Edición Especial</button>
+                  <button type="button" class="btn btn-primary">Player Version</button>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div id="liga" class="container madrid">
-            <div class="DivEscudo">
-                <img class="escudo" src="https://upload.wikimedia.org/wikipedia/commons/7/70/RealMadrid.png">
-            </div>
-            <div class="textoDiv">
-                <span> Real Madrid </span>
-                <span> 2023/2024 </span>
-            </div>
-        </div>
       </div>
-      <div class="col">
-        <div id="buttons" class="container-fluid"> 
-          <div class="container">
-            <button type="button" class="btn btn-primary">Local</button>
-            <button type="button" class="btn btn-primary">Visitante</button>
-            <button type="button" class="btn btn-primary">Edición Especial</button>
-            <button type="button" class="btn btn-primary">Player Version</button>
-          </div>
-        </div>
-        <div id="liga" class="container barca">
-            <div class="DivEscudo">
-                <img class="escudo" src="https://cdn.icon-icons.com/icons2/104/PNG/256/fc_barcelona_footballteam_18015.png">
-            </div>
-            <div class="textoDiv barca">
-                <span> Barcelona </span>
-                <span> 2023/2024 </span>
-            </div>
-        </div>
-      </div>
-      <div class="col">
-        <div id="buttons" class="container-fluid"> 
-          <div class="container">
-            <button type="button" class="btn btn-primary">Local</button>
-            <button type="button" class="btn btn-primary">Visitante</button>
-          </div>
-        </div>
-        <div id="liga" class="container sevilla">
-            <div class="DivEscudo">
-                <img class="escudo" src="https://cdn.icon-icons.com/icons2/1637/PNG/256/sevilla_109492.png">
-            </div>
-            <div class="textoDiv sevilla">
-                <span> Sevilla </span>
-                <span> 2023/2024 </span>
-            </div>
-        </div>
-      </div>
-      <div class="col">
-        <div id="buttons" class="container-fluid"> 
-          <div class="container">
-            <button type="button" class="btn btn-primary">Local</button>
-            <button type="button" class="btn btn-primary">Visitante</button>
-          </div>
-        </div>
-        <div id="liga" class="container osasuna">
-            <div class="DivEscudo">
-                <img class="escudo" src="https://1.bp.blogspot.com/-qJd04UH2G_4/X4eqsDAb_jI/AAAAAAABg5Q/JF2eo342vzouhED_wdezCjic6G3ib_IvwCLcBGAsYHQ/s0/CA%2BOsasuna256x.png">
-            </div>
-            <div class="textoDiv osasuna">
-                <span> Osasuna </span>
-                <span> 2023/2024 </span>
-            </div>
-        </div>
-      </div>
-      <div class="col">
-        <div id="buttons" class="container-fluid"> 
-          <div class="container">
-            <button type="button" class="btn btn-primary">Local</button>
-            <button type="button" class="btn btn-primary">Visitante</button>
-          </div>
-        </div>
-        <div id="liga" class="container atletico">
-            <div class="DivEscudo">
-                <img class="escudo" src="https://www.osasuna.es/_next/image?url=https%3A%2F%2Fs3.amazonaws.com%2Fadm-production-osasuna%2Fimages%2Fclubes%2F71519dd089fb53a4102c53ed48dcdd80.png&w=256&q=75">
-            </div>
-            <div class="textoDiv atletico">
-                <span> Atlético </span>
-                <span> 2023/2024 </span>
-            </div>
-        </div>
-      </div>
-      <div class="col">
-        <div id="buttons" class="container-fluid"> 
-          <div class="container">
-            <button type="button" class="btn btn-primary">Local</button>
-            <button type="button" class="btn btn-primary">Visitante</button>
-          </div>
-        </div>
-        <div id="liga" class="container girona">
-            <div class="DivEscudo">
-                <img class="escudo" src="https://4.bp.blogspot.com/-v5Ki8a_pv_M/WVQMcwpl1mI/AAAAAAABKPQ/DPoz28vSzfg0HRqBojUmkNxecRSog-J8gCLcBGAs/s1600/Girona%2BFC256x.png">
-            </div>
-            <div class="textoDiv girona">
-                <span> Girona </span>
-                <span> 2023/2024 </span>
-            </div>
-        </div>
-      </div>
-      <div class="col">
-        <div id="buttons" class="container-fluid"> 
-          <div class="container">
-            <button type="button" class="btn btn-primary">Local</button>
-            <button type="button" class="btn btn-primary">Visitante</button>
-          </div>
-        </div>
-        <div id="liga" class="container betis">
-            <div class="DivEscudo">
-                <img class="escudo" src="https://cdn.icon-icons.com/icons2/1637/PNG/256/betis_109480.png">
-            </div>
-            <div class="textoDiv betis">
-                <span> Betis </span>
-                <span> 2023/2024 </span>
-            </div>
-        </div>
-      </div>
-      <div class="col">
-        <div id="buttons" class="container-fluid"> 
-          <div class="container">
-            <button type="button" class="btn btn-primary">Local</button>
-            <button type="button" class="btn btn-primary">Visitante</button>
-          </div>
-        </div>
-        <div id="liga" class="container cadiz">
-            <div class="DivEscudo">
-                <img class="escudo" src="https://www.comuniate.com/intranet/equipos/fotos/117.jpg">
-            </div>
-            <div class="textoDiv cadiz">
-                <span> Cádiz </span>
-                <span> 2023/2024 </span>
-            </div>
-        </div>
-      </div>
-      <div class="col">
-        <div id="buttons" class="container-fluid"> 
-          <div class="container">
-            <button type="button" class="btn btn-primary">Local</button>
-            <button type="button" class="btn btn-primary">Visitante</button>
-          </div>
-        </div>
-        <div id="liga" class="container athletic">
-            <div class="DivEscudo">
-                <img class="escudo" src="https://1.bp.blogspot.com/-nb8Vm6oDLk8/XfmNzrbYvkI/AAAAAAABW28/aT5_Ho_SwqojhqMnP80ZKVR5Fr9UKytQACLcBGAsYHQ/s1600/Athletic%2BClub56x.png">
-            </div>
-            <div class="textoDiv athletic">
-                <span> Athletic </span>
-                <span> 2023/2024 </span>
-            </div>
-        </div>
-      </div>
-      <div class="col">
-        <div id="buttons" class="container-fluid"> 
-          <div class="container">
-            <button type="button" class="btn btn-primary">Local</button>
-            <button type="button" class="btn btn-primary">Visitante</button>
-          </div>
-        </div>
-        <div id="liga" class="container sociedad">
-            <div class="DivEscudo">
-                <img class="escudo" src="https://3.bp.blogspot.com/-PeZkRg5RQJg/Wdis0-KJbbI/AAAAAAABPnA/E-YxY4qoPtYV3N6xgMKG4TkwQJJLAlfTwCLcBGAs/s1600/Real%2BSociedad256x.png">
-            </div>
-            <div class="textoDiv sociedad">
-                <span> Real Sociedad </span>
-                <span> 2023/2024 </span>
-            </div>
-        </div>
-      </div>
-    </div>
+  </div>
+  <div id="footer" class="container">
+    <button id="btnFooter" type="button" class="btn btn-primary">Siguiente Página</button>
+  </div>
 </div>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

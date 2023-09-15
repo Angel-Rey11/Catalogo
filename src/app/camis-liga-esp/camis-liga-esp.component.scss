@@ -22,13 +22,6 @@
 
 }
 
-.container {
-    display: grid;
-    grid-column: auto;
-    justify-content: center;
-    align-items: center;
-}
-
 .btn {
     width: 100%;
     margin-top: 5%;
@@ -82,24 +75,63 @@
     color: #5C8374;
 }
 
-#grid {
-    font-family: 'Cami';
-    background-color: #93B1A6;
-    height: auto;
+.accordion-item {
+    --bs-accordion-border-color: transparent;
 }
 
-#liga {
-    width: 100%;
-    height: 80px;
-    border: 1px solid black;
-    justify-content: left;
+.accordion {
+    --bs-accordion-active-bg: none !important;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem transparent;
+    --bs-accordion-bg: transparent;
+    background-color: #E7A614;
+}
+
+.accordion-button {
+    color: white !important;
+    font-size: 16px !important;
+}
+
+.accordion-body {
+    text-align: center;
+}
+
+.accordion-button:after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+#menu {
+    height: 93vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #93B1A6;
+    overflow: auto !important;
+}
+
+.col {
+    gap: 5%;
+    margin-top: 5%;
+}
+
+.btn {
+    background-color: white;
+    color: #040D12;
+    border: 1px solid #040D12;
+    border-radius: 0%;
+    font-weight: bolder;
+}
+
+.container {
+    background-color: #5C8374;
+    height: 8vh;
+    justify-content: center;
     align-items: center;
     text-align: center;
     display: flex;
+    font-size: 20px;
     cursor: pointer;
-    margin-top: 3%;
-    color: white;
-    font-size: 14px;
+    border: 1px solid black;
+    font-family: 'Info';
+    width: 100% !important;
 }
 
 .img {
@@ -107,10 +139,6 @@
     margin-left: auto;
 }
 
-.pais {
-    width: 40px;
-    margin-left: auto;
-}
 
 // CAROUSEL ESTILOS
 // -----------------------------------
@@ -128,78 +156,22 @@
     background-color: #5C8374;
 }
 
-// EQUIPOS COLORES
 
-.madrid {
-    background-color: #FEBE10 !important;
-}
-
-.barca {
-    background-color: #A50044 !important;
-    color: #ffed02;
-}
-
-.sevilla {
-    background-color: #F43333 !important;
-    color: white;
-}
-
-.atletico {
-    background-color: #272E61 !important;
-    color: white;
-}
-
-.osasuna {
-    background-color: #0A346F !important;
-    color: white;
-}
-
-.cadiz {
-    background-color: #fde607 !important;
-    color: black;
-}
-
-.betis {
-    background-color: #0BB363 !important;
-    color: #E7A614;
-}
-
-.girona {
-    background-color: #cd2534 !important;
-    color: white;
-}
-
-.athletic {
-    background-color: #EE2523 !important;
-    color: white;
-}
-
-.sociedad {
-    background-color: #0067B1 !important;
-    color: white;
-}
 
 .escudo {
-    width: 40px;
+    width: 30px;
 }
 
 // ------------------------------------------
 
 .textoDiv {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 80%;
+    width: 100%;
 }
 
 // ---------------------------------------
-
-.col {
-    margin-top: 3%;
-    height: 100%;
-}
 
 .logo {
     width: 40px;
@@ -255,7 +227,21 @@ html, body {
     justify-content: center;
     align-items: center;
     z-index: 999;
-  }
+}
+
+#footer {
+    background-color: transparent !important;
+    margin-top: 3%;
+    border: none;
+}
+
+#btnFooter {
+    margin-top: 0%;
+    width: 50%;
+    height: 5vh;
+    background-color: #5C8374;
+    color: white;
+}
 
 @media (max-width: 768px) {
 
@@ -298,5 +284,18 @@ html, body {
     
     .navbar-collapse.show {
         right: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .btn {
+        transition: background-color 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+
+    .btn:hover {
+        transform: scale(1);
+        background-color: #93B1A6;
+        border-radius: 50px;
     }
 }
