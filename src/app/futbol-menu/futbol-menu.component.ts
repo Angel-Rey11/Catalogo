@@ -8,9 +8,16 @@ import { Router } from '@angular/router';
 })
 export class FutbolMenuComponent implements OnInit {
 
+  mostrarTabla1 = true;
+  modalTitulo = 'EQUIPACIÓN ADIDAS';
   constructor(private router:Router) { }
 
   ngOnInit(): void {
+  }
+
+  cambiarTabla(cambiarA1: boolean) {
+    this.mostrarTabla1 = cambiarA1;
+    this.modalTitulo = cambiarA1 ? 'EQUIPACIÓN ADIDAS' : 'EQUIPACIÓN PUMA/NIKE/NB';
   }
 
   navigateToLigas() {

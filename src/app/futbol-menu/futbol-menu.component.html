@@ -81,7 +81,7 @@
       </div>
   </div>
   <div id="segundo" class="container"> 
-      <div id="divBody" class="container"> 
+      <div id="divBody" class="container" data-bs-toggle="modal" data-bs-target="#exampleModal"> 
           <div class="header">
               <span> TALLAS </span>
           </div>
@@ -90,5 +90,309 @@
                 Te ofrecemos una variedad de opciones para que encuentres la comodidad que necesitas mientras representas a tu equipo favorito en estilo. </span>
           </div>
       </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img class="logoPagina" src="./assets/logoPagina.png">
+        <span class="title"> TOPCLOTHES </span>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="headerTalla" class="container"> 
+          <span> ¿QUÉ TABLA DE TALLAS QUIERES VER? </span>
+        </div>
+        <div id="eleccionTalla" class="container"> 
+          <div class="eleccion" data-bs-toggle="modal" data-bs-target="#modalCamisPV">
+            CAMISETA PLAYER VERSION
+          </div>
+          <div class="eleccion" data-bs-toggle="modal" data-bs-target="#modalCamisFan">
+            CAMISETA FAN
+          </div>
+          <div class="eleccion" data-bs-toggle="modal" data-bs-target="#modalPantalon">
+            PANTALÓN
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- MODAL PARA TALLAS PANTALON -->
+
+<div class="modal fade" id="modalPantalon" tabindex="-1" aria-labelledby="modalPantalonLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img class="logoPagina" src="./assets/logoPagina.png">
+        <span class="title"> TOPCLOTHES </span>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="talla" class="container">  
+          <span> PANTALÓN </span>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr class="table-primary"> 
+                <th scope="col">Talla</th>
+                <th scope="col">1/2 Cintura</th>
+                <th scope="col">Largo</th>
+                <th scope="col">CM de Cliente</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr class="table-secondary">
+                <th scope="row">S</th>
+                <td>30</td>
+                <td>44</td>
+                <td>165-170</td>
+              </tr>
+              <tr class="table-success">
+                <th scope="row">M</th>
+                <td>32</td>
+                <td>46</td>
+                <td>170-175</td>
+              </tr>
+              <tr class="table-danger">
+                <th scope="row">L</th>
+                <td>34</td>
+                <td>48</td>
+                <td>175-180</td>
+              </tr>
+              <tr class="table-warning">
+                <th scope="row">XL</th>
+                <td>36</td>
+                <td>50</td>
+                <td>180-185</td>
+              </tr>
+              <tr class="table-info">
+                <th scope="row">2XL</th>
+                <td>38</td>
+                <td>50</td>
+                <td>185-190</td>
+              </tr>
+              <tr class="table-light">
+                <th scope="row">3XL</th>
+                <td>40</td>
+                <td>52</td>
+                <td>190-195</td>
+              </tr>
+              <tr class="table-light">
+                <th scope="row">4XL</th>
+                <td>42</td>
+                <td>54</td>
+                <td>195-200</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="talla" class="container">  
+          <span> Se permite un margen de error de +/- 2CM </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL PARA TALLAS CAMISETAS FAN -->
+
+<div class="modal fade" id="modalCamisFan" tabindex="-1" aria-labelledby="modalCamisFanLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img class="logoPagina" src="./assets/logoPagina.png">
+        <span class="title"> TOPCLOTHES </span>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="talla" class="container">  
+          <span> CAMISETAS FAN </span>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr class="table-primary"> 
+                <th scope="col">Talla</th>
+                <th scope="col">1/2 Pecho</th>
+                <th scope="col">Largo</th>
+                <th scope="col">CM de Cliente</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr class="table-secondary">
+                <th scope="row">S</th>
+                <td>49-51</td>
+                <td>67-69</td>
+                <td>165-170</td>
+              </tr>
+              <tr class="table-success">
+                <th scope="row">M</th>
+                <td>51-53</td>
+                <td>69-71</td>
+                <td>170-175</td>
+              </tr>
+              <tr class="table-danger">
+                <th scope="row">L</th>
+                <td>53-55</td>
+                <td>71-73</td>
+                <td>175-180</td>
+              </tr>
+              <tr class="table-warning">
+                <th scope="row">XL</th>
+                <td>55-57</td>
+                <td>73-76</td>
+                <td>180-185</td>
+              </tr>
+              <tr class="table-info">
+                <th scope="row">2XL</th>
+                <td>58-60</td>
+                <td>77-79</td>
+                <td>185-190</td>
+              </tr>
+              <tr class="table-light">
+                <th scope="row">3XL</th>
+                <td>60-62</td>
+                <td>80-82</td>
+                <td>190-195</td>
+              </tr>
+              <tr class="table-light">
+                <th scope="row">4XL</th>
+                <td>62-64</td>
+                <td>82-84</td>
+                <td>195-200</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="talla" class="container">  
+          <span> Se permite un margen de error de +/- 2CM </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL PARA TALLAS CAMISETAS PLAYER VERSION -->
+
+<div class="modal fade" id="modalCamisPV" tabindex="-1" aria-labelledby="modalCamisPVLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img class="logoPagina" src="./assets/logoPagina.png">
+        <span class="title"> TOPCLOTHES </span>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="talla" class="container">  
+          <span> CAMISETAS PLAYER VERSION </span>
+        </div>
+        <!-- TABLA 1 ADIDAS -->
+        <div class="table-responsive">
+          <table class="table table-striped" *ngIf="mostrarTabla1">
+            <thead>
+              <tr class="table-primary"> 
+                <th scope="col">Talla</th>
+                <th scope="col">Largo</th>
+                <th scope="col">1/2 Pecho</th>
+                <th scope="col">Cintura</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr class="table-secondary">
+                <th scope="row">S</th>
+                <td>70</td>
+                <td>47</td>
+                <td>44</td>
+              </tr>
+              <tr class="table-success">
+                <th scope="row">M</th>
+                <td>72</td>
+                <td>49</td>
+                <td>46</td>
+              </tr>
+              <tr class="table-danger">
+                <th scope="row">L</th>
+                <td>75</td>
+                <td>51</td>
+                <td>48</td>
+              </tr>
+              <tr class="table-warning">
+                <th scope="row">XL</th>
+                <td>78</td>
+                <td>53</td>
+                <td>50</td>
+              </tr>
+              <tr class="table-info">
+                <th scope="row">XXL</th>
+                <td>80</td>
+                <td>55</td>
+                <td>52</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- TABLA 2 PUMA/NIKE/NB -->
+        <div class="table-responsive">
+          <table class="table table-striped" *ngIf="!mostrarTabla1">
+            <thead>
+              <tr class="table-primary"> 
+                <th scope="col">Talla</th>
+                <th scope="col">Largo</th>
+                <th scope="col">Pecho</th>
+                <th scope="col">Cintura</th>
+               </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr class="table-secondary">
+                <th scope="row">S</th>
+                <td>69</td>
+                <td>49</td>
+                <td>45</td>
+              </tr>
+              <tr class="table-success">
+                <th scope="row">M</th>
+                <td>72</td>
+                <td>51</td>
+                <td>47</td>
+              </tr>
+              <tr class="table-danger">
+                <th scope="row">L</th>
+                <td>74</td>
+                <td>53</td>
+                <td>49</td>
+              </tr>
+              <tr class="table-warning">
+                <th scope="row">XL</th>
+                <td>77</td>
+                <td>56</td>
+                <td>52</td>
+              </tr>
+              <tr class="table-info">
+                <th scope="row">XXL</th>
+                <td>80</td>
+                <td>59</td>
+                <td>55</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="nombre" class="container">
+          <span> {{modalTitulo}}</span>
+        </div>
+        <div id="footer" class="container">
+          <button id="btnFooter" type="button" class="btn btn-primary" (click)="cambiarTabla(true)" [disabled]="mostrarTabla1">Anterior</button>
+          <button id="btnFooter" type="button" class="btn btn-primary" (click)="cambiarTabla(false)" [disabled]="!mostrarTabla1">Siguiente</button>
+        </div>
+        <div id="talla" class="container">  
+          <span> Se permite un margen de error de +/- 2CM </span>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

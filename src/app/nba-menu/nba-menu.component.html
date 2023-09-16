@@ -55,7 +55,7 @@
     </div>
 </div>
 <div id="segundo" class="container"> 
-    <div id="divBody" class="container"> 
+    <div id="divBody" class="container" data-bs-toggle="modal" data-bs-target="#exampleModal"> 
         <div class="header">
             <span> TALLAS </span>
         </div>
@@ -65,5 +65,79 @@
         </div>
     </div>
 </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img class="logoPagina" src="./assets/logoPagina.png">
+        <span class="title"> TOPCLOTHES </span>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr class="table-primary"> 
+                <th scope="col">Talla</th>
+                <th scope="col">1/2 Pecho</th>
+                <th scope="col">Largo Delantero</th>
+                <th scope="col">Largo Trasero</th>
+                <th scope="col">CM de Cliente</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr class="table-secondary">
+                <th scope="row">S</th>
+                <td>53</td>
+                <td>74</td>
+                <td>78</td>
+                <td>170-173</td>
+              </tr>
+              <tr class="table-success">
+                <th scope="row">M</th>
+                <td>57</td>
+                <td>78</td>
+                <td>83</td>
+                <td>173-178</td>
+              </tr>
+              <tr class="table-danger">
+                <th scope="row">L</th>
+                <td>59</td>
+                <td>81</td>
+                <td>86</td>
+                <td>178-183</td>
+              </tr>
+              <tr class="table-warning">
+                <th scope="row">XL</th>
+                <td>62</td>
+                <td>83</td>
+                <td>88</td>
+                <td>183-188</td>
+              </tr>
+              <tr class="table-info">
+                <th scope="row">2XL</th>
+                <td>64</td>
+                <td>85</td>
+                <td>90</td>
+                <td>188-195</td>
+              </tr>
+              <tr class="table-light">
+                <th scope="row">3XL</th>
+                <td>53</td>
+                <td>74</td>
+                <td>78</td>
+                <td>170-173</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="talla" class="container">  
+          <span> Se permite un margen de error de +/- 2CM </span>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 

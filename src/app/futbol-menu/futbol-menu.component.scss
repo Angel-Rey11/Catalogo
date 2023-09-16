@@ -158,6 +158,80 @@ html, body {
     font-size: 18px;
 }
 
+.modal-header {
+    border-bottom: 0px;
+    background-color: #5C8374;
+    height: 60px;
+    .title {
+        font-family: 'cami';
+        font-size: 16px;
+        color: white;
+    }
+    .logoPagina {
+        width: 60px;
+    }
+}
+
+#talla {
+    height: auto !important;
+    background-color: azure !important;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#nombre {
+    height: auto !important;
+    background-color: transparent !important;
+    border: none;
+    margin-bottom: 2%;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+#headerTalla {
+    height: auto;
+    background-color: transparent;
+    font-weight: bolder;
+    border: none;
+}
+
+#eleccionTalla {
+    height: auto;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column !important;
+    margin-top: 2%;
+}
+
+.eleccion {
+    border: 1px solid #183D3D;
+    color: white;
+    background-color: #5C8374;
+    width: 100%;
+    margin-top: 3%;
+}
+
+#footer {
+    background-color: transparent !important;
+    margin-top: 3%;
+    border: none;
+    height: auto;
+    gap: 2%;
+}
+
+#btnFooter {
+    margin-top: 0%;
+    width: 50%;
+    height: auto;
+    background-color: #5C8374;
+    color: white;
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: none;
+    --bs-btn-hover-bg: none;
+    --bs-btn-hover-border-color: none;
+}
+
 @media (min-width: 1200px) {
 
     #divBody {

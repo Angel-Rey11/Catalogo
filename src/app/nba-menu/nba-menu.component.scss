@@ -158,6 +158,26 @@ html, body {
     background-color: transparent !important
 }
 
+.modal-header {
+    border-bottom: 0px;
+    background-color: #5C8374;
+    height: 60px;
+    .title {
+        font-family: 'cami';
+        font-size: 16px;
+        color: white;
+    }
+    .logoPagina {
+        width: 60px;
+    }
+}
+
+#talla {
+    height: auto !important;
+    background-color: azure !important;
+    margin-top: 2%;
+}
+
 @media (min-width: 1200px) {
 
     #divBody {
