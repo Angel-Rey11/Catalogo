@@ -12,7 +12,9 @@ export class CamisLigaEspComponent implements OnInit {
 
   images: string[];
   isLoading: boolean = false;
-
+  acordeonAbiertoIndex: number | null = null;;
+  itemsPerPage = 10;
+  currentPage = 1;
   acordeones = [
     {
       equipo: "Madrid",
@@ -66,6 +68,56 @@ export class CamisLigaEspComponent implements OnInit {
       img: "https://3.bp.blogspot.com/-PeZkRg5RQJg/Wdis0-KJbbI/AAAAAAABPnA/E-YxY4qoPtYV3N6xgMKG4TkwQJJLAlfTwCLcBGAs/s1600/Real%2BSociedad256x.png",
       color: "#0067B1"
     },
+    {
+      equipo: "Valencia",
+      img: "https://1.bp.blogspot.com/-Jx0LAuXlMx0/XsMEb9jiBBI/AAAAAAABa5c/s50Q_Zij1YogDtpoynJo4Q-DfZyKXFUXgCK4BGAsYHg/Valencia%2BCF256x.png",
+      color: "#D18817"
+    },
+    {
+      equipo: "Rayo",
+      img: "https://1.bp.blogspot.com/-qFEwOFDUM9k/WVP6OnI50DI/AAAAAAABKLM/bvqyzIxsK1Y6I6Ubhn57346ZDyMRrt0xwCLcBGAs/s1600/Rayo%2BVallecano256x.png",
+      color: "#000000"
+    },
+    {
+      equipo: "Alavés",
+      img: "https://1.bp.blogspot.com/-lpK4kKb7I_U/XyGVYAbFfHI/AAAAAAABfas/QnmKkzYENcANO87ArBuYB3S72liZpPIOgCLcBGAsYHQ/s0/Deportivo%2BAlaves256x.png",
+      color: "#0761AF"
+    },
+    {
+      equipo: "Celta",
+      img: "https://1.bp.blogspot.com/-K5SSQpnYy7I/WVQJ8fT_UYI/AAAAAAABKOI/tJjxUmPHmAglPf1VE2AbCTAS03CRGdDygCLcBGAs/s1600/Celta%2Bde%2BVigo256x.png",
+      color: "#8AC3EE"
+    },
+    {
+      equipo: "Mallorca",
+      img: "https://1.bp.blogspot.com/-2ZCAkK7Eqtc/X4emZLXklYI/AAAAAAABg3A/l13SSy_9WLcGcCq9-IVoO2aiv0ukoZIagCLcBGAsYHQ/s0/RCD%2BMallorca256x.png",
+      color: "#E20613"
+    },
+    {
+      equipo: "Villarreal",
+      img: "https://1.bp.blogspot.com/-1pm-dO0mW6I/WVQSsT31atI/AAAAAAABKRk/yRDKwNfYrgwmzmHVJ4gc8UDa_fOCC2YVwCLcBGAs/s1600/Villarreal%2BCF256x.png",
+      color: "#FFE667"
+    },
+    {
+      equipo: "Granada",
+      img: "https://logodetimes.com/times/granada/logo-granada-256.png",
+      color: "#A61B2B"
+    },
+    {
+      equipo: "Getafe",
+      img: "https://1.bp.blogspot.com/-D4GoH_433V8/XVqw8xHe7VI/AAAAAAAAOAs/2uzK3WAHHw0oQAyR1RAlpqzvHaUYy6K7QCLcBGAs/s1600/Getafe%2BCF%2BB%2B256x.png",
+      color: "#005999"
+    },
+    {
+      equipo: "U.D Palmas",
+      img: "https://3.bp.blogspot.com/-ypbBf2gpuzs/WX2LNWOY50I/AAAAAAAAIUw/3JQgVrlLvPUT_TFDCjnveX1JHtnJcuQmwCLcBGAs/s1600/Las%2BPalmas%2BAtl%25C3%25A9tico256x.png",
+      color: "#ffe400"
+    },
+    {
+      equipo: "Almería",
+      img: "https://1.bp.blogspot.com/-svTqDfTFYQM/X5oNIp4r_hI/AAAAAAABhIU/w0WkGNzp1WAG6UfHWWxJG-2rKqTe0hXqACLcBGAsYHQ/s0/UD%2BAlmeria256x.png",
+      color: "#ee1119"
+    },
   ];
 
   constructor(private storage: Storage) { 
@@ -76,7 +128,24 @@ export class CamisLigaEspComponent implements OnInit {
 
   }
 
-  acordeonAbiertoIndex: number | null = null;
+  // Método para calcular el número total de páginas
+  getTotalPages(): number {
+    return Math.ceil(this.acordeones.length / this.itemsPerPage);
+  }
+
+  // Método para avanzar a la siguiente página
+  nextPage() {
+    if (this.currentPage < this.getTotalPages()) {
+      this.currentPage++;
+    }
+  }
+
+  // Método para retroceder a la página anterior
+  previousPage() {
+    if (this.currentPage > 1) {
+      this.currentPage--;
+    }
+  }
 
   toggleAcordeon(index: number) {
     if (this.acordeonAbiertoIndex === index) {
