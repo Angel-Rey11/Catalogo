@@ -20,10 +20,10 @@ export class CamisLigaEspComponent implements OnInit {
       equipo: "Madrid",
       img: "https://upload.wikimedia.org/wikipedia/commons/7/70/RealMadrid.png",
       color: "#FEBE10",
-      srcL: 'local/realmadrid',
-      srcV: 'visitante/realmadrid',
+      srcL: '',
+      srcV: '',
       src3: '',
-      srcEE: '',
+      srcEE: 'edicionespecial/realmadrid',
       srcPV: ''
     },
     {
@@ -32,7 +32,7 @@ export class CamisLigaEspComponent implements OnInit {
       color: "#A50044",
       srcL: '',
       srcV: '',
-      src3: '',
+      src3: '3eq/barcelona',
       srcEE: '',
       srcPV: ''
     },
@@ -223,7 +223,10 @@ export class CamisLigaEspComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+    })  
   }
 
   // Método para calcular el número total de páginas
