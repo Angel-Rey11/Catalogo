@@ -210,7 +210,7 @@ html, body {
 // ----------------------------------
 
 .spinner-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -246,6 +246,11 @@ html, body {
     width: 30px;
     cursor: pointer;
     animation: bounce 1s linear 3s 1 normal forwards;
+}
+
+#carrouselImg {
+    max-height: 300px;
+    object-fit: contain;
 }
 
 @keyframes bounce {

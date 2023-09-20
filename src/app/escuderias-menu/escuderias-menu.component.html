@@ -156,7 +156,7 @@
         <div id="carousel" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item" *ngFor="let image of images; let i = index" [ngClass]="{'active': i === 0}">
-              <img [src]="image" class="d-block w-100" alt="...">
+              <img [src]="image" id="carrouselImg" class="d-block w-100" alt="...">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">

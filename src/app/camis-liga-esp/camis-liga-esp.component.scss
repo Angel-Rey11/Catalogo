@@ -234,7 +234,7 @@ html, body {
 }
 
 .spinner-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -244,6 +244,11 @@ html, body {
     justify-content: center;
     align-items: center;
     z-index: 999;
+}
+
+#carrouselImg {
+    max-height: 300px;
+    object-fit: contain;
 }
 
 #footer {
