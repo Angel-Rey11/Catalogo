@@ -1,3 +1,8 @@
+<div class="spinner-container" *ngIf="isLoading">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
 <div class="container-fluid">
   <img class="logoPagina" src="./assets/logoPagina.png">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -37,7 +42,7 @@
 </div>
 <div id="menu" class="container-fluid">
   <div id="segundo" class="container"> 
-      <div id="motor" class="container redbull">
+      <div id="motor" class="container redbull" (click)="openmodal('redbull')">
           <div class="header">
               <span> RED BULL </span>
               <img class="img-fluid" src="./assets/redbull.png">
@@ -46,7 +51,7 @@
             <img class="img-fluid coche" src="https://cdn-1.motorsport.com/static/custom/car-thumbs/F1_2023/CARS/redbull.png">
           </div>
       </div>
-      <div id="nba" class="container mercedes">
+      <div id="nba" class="container mercedes" (click)="openmodal('mercedes')">
           <div class="header">
               <span> MERCEDES </span>
               <img class="img-fluid" src="./assets/mercedes.png">
@@ -57,7 +62,7 @@
       </div>
   </div>
   <div id="segundo" class="container"> 
-    <div id="motor" class="container ferrari">
+    <div id="motor" class="container ferrari" (click)="openmodal('ferrari')">
         <div class="header">
             <span> FERRARI </span>
             <img class="img-fluid" src="./assets/ferrari.png">
@@ -66,7 +71,7 @@
           <img class="img-fluid coche" src="https://cdn-1.motorsport.com/static/custom/car-thumbs/F1_2023/CARS/ferrari.png">
         </div>
     </div>
-    <div id="nba" class="container aston">
+    <div id="nba" class="container aston" (click)="openmodal('')">
         <div class="header">
             <span> ASTON </span>
             <img class="img-fluid" src="./assets/aston.png">
@@ -77,7 +82,7 @@
     </div>
   </div>
   <div id="segundo" class="container"> 
-    <div id="motor" class="container mclaren">
+    <div id="motor" class="container mclaren" (click)="openmodal('mclaren')">
         <div class="header">
             <span> MCLAREN </span>
             <img class="img-fluid" src="./assets/mclaren.png">
@@ -86,7 +91,7 @@
           <img class="img-fluid coche" src="https://cdn-1.motorsport.com/static/custom/car-thumbs/F1_2023/CARS/mclaren.png">
         </div>
     </div>
-    <div id="nba" class="container alpine">
+    <div id="nba" class="container alpine" (click)="openmodal('alpine')">
         <div class="header">
             <span> ALPINE </span>
             <img class="img-fluid" src="./assets/alpine.png">
@@ -97,7 +102,7 @@
     </div>
   </div>
   <div id="segundo" class="container"> 
-    <div id="motor" class="container romeo">
+    <div id="motor" class="container romeo" (click)="openmodal('alfaromeo')">
         <div class="header">
             <span> ALFA ROMEO </span>
             <img class="img-fluid" src="./assets/alfaromeo.png">
@@ -106,7 +111,7 @@
           <img class="img-fluid coche" src="https://cdn-1.motorsport.com/static/custom/car-thumbs/F1_2023/CARS/alfaromo.png">
         </div>
     </div>
-    <div id="nba" class="container alphatauri">
+    <div id="nba" class="container alphatauri" (click)="openmodal('alphatauri')">
         <div class="header">
             <span> ALPHATAURI </span>
             <img class="img-fluid" src="./assets/alphatauri.png">
@@ -117,7 +122,7 @@
     </div>
   </div>
   <div id="segundo" class="container"> 
-    <div id="motor" class="container haas">
+    <div id="motor" class="container haas" (click)="openmodal('')">
         <div class="header">
             <span> HAAS </span>
             <img class="img-fluid" src="./assets/haas.png">
@@ -126,7 +131,7 @@
           <img class="img-fluid coche" src="https://cdn-1.motorsport.com/static/custom/car-thumbs/F1_2023/CARS/haas.png">
         </div>
     </div>
-    <div id="nba" class="container williams">
+    <div id="nba" class="container williams" (click)="openmodal('')">
         <div class="header">
             <span> WILLIAMS </span>
             <img class="img-fluid" src="./assets/williams.png">
@@ -135,6 +140,47 @@
           <img class="img-fluid coche" src="https://cdn-1.motorsport.com/static/custom/car-thumbs/F1_2023/CARS/williams.png">
         </div>
     </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img class="logoPagina" src="./assets/logoPagina.png">
+        <span class="title"> TOPCLOTHES </span>
+        <img id="tool" class="img" src="./assets/info.png" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Si desea más fotos, por favor, póngase en contacto con nosotros">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carousel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item" *ngFor="let image of images; let i = index" [ngClass]="{'active': i === 0}">
+              <img [src]="image" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast-container position-fixed bottom-0 start-0 p-3">
+  <div id="copiado" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+          <div class="toast-body">
+            <span class="check"> Este tipo de camiseta no está disponible. </span>
+          </div>
+              <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
   </div>
 </div>
 

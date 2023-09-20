@@ -12,7 +12,7 @@ export class CamisLigaEspComponent implements OnInit {
 
   images: string[];
   isLoading: boolean = false;
-  acordeonAbiertoIndex: number | null = null;;
+  acordeonAbiertoIndex: number | null = null;
   itemsPerPage = 10;
   currentPage = 1;
   acordeones = [
